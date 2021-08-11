@@ -29,6 +29,9 @@ body {
             font-weight: 500;
             margin-block-start: 0;
             margin-block-end: 0;
+            span {
+                color:rgb(244, 146, 171);
+            }
         }
 
         &__navbar {
@@ -56,6 +59,10 @@ body {
             background-color: white;
             display: flex;
             flex-direction: column;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
 
             &__header {
                 background-color: rgb(250, 217, 223);
@@ -65,14 +72,26 @@ body {
                 justify-content: center;
                 padding-top: 1rem;
                 padding-bottom: 1rem;
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            &__content {
+                padding: 3rem;
             }
 
             .homepage__header {
                 justify-content: space-around;
 
                 &__avatar {
-                    margin-top: 40px;
-                    margin-bottom: -40px;
+                    background-image: url(/image/avatar.jpeg);
+                    background-size: cover;
+                    width: 250px;
+                    height: 250px;
+                    margin-top: 2rem;
+                    margin-bottom: -2rem;
+                    border: 3px solid rgb(244, 146, 171);
+                    border-radius: 4px;
                 }
 
                 &__info {
@@ -86,6 +105,32 @@ body {
                     &__occupation {
                         font-size: 1.5rem;
                     }
+                }
+            }
+
+            .homepage__content {
+                display: flex;
+                justify-content: space-between;
+
+                &__aboutme {
+                    width: 50%;
+                    margin-right: 5rem;
+                    line-height: 1.75rem;
+                    &__header {
+                        font-size: 1.5rem;
+                        span {
+                            color:rgb(244, 146, 171);
+                        }
+                    }
+
+                }
+
+                &__detail__table td:first-of-type {
+                    padding-right: 2rem;
+                }
+
+                &__detail__table td:last-of-type {
+                    color:gray;
                 }
             }
         }

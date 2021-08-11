@@ -30,6 +30,9 @@ body {
   margin-block-start: 0;
   margin-block-end: 0;
 }
+.main__header__title span {
+  color: #f492ab;
+}
 .main__header__navbar {
   display: flex;
 }
@@ -53,6 +56,10 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .main__body .page__header {
   background-color: #fad9df;
@@ -62,13 +69,24 @@ body {
   justify-content: center;
   padding-top: 1rem;
   padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.main__body .page__content {
+  padding: 3rem;
 }
 .main__body .page .homepage__header {
   justify-content: space-around;
 }
 .main__body .page .homepage__header__avatar {
-  margin-top: 40px;
-  margin-bottom: -40px;
+  background-image: url(/image/avatar.jpeg);
+  background-size: cover;
+  width: 250px;
+  height: 250px;
+  margin-top: 2rem;
+  margin-bottom: -2rem;
+  border: 3px solid #f492ab;
+  border-radius: 4px;
 }
 .main__body .page .homepage__header__info {
   display: flex;
@@ -81,6 +99,27 @@ body {
 }
 .main__body .page .homepage__header__info__occupation {
   font-size: 1.5rem;
+}
+.main__body .page .homepage__content {
+  display: flex;
+  justify-content: space-between;
+}
+.main__body .page .homepage__content__aboutme {
+  width: 50%;
+  margin-right: 5rem;
+  line-height: 1.75rem;
+}
+.main__body .page .homepage__content__aboutme__header {
+  font-size: 1.5rem;
+}
+.main__body .page .homepage__content__aboutme__header span {
+  color: #f492ab;
+}
+.main__body .page .homepage__content__detail__table td:first-of-type {
+  padding-right: 2rem;
+}
+.main__body .page .homepage__content__detail__table td:last-of-type {
+  color: gray;
 }
 
 /*# sourceMappingURL=main.css.map */
