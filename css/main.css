@@ -232,12 +232,28 @@ body {
 .main__body .page__content .services__team__members {
   display: flex;
   justify-content: space-around;
+  margin-bottom: 40px;
 }
 .main__body .page__content .services__team__members__member {
   height: 200px;
   width: 200px;
-  overflow: hidden;
   border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+.main__body .page__content .services__team__members__member__name {
+  position: absolute;
+  bottom: -60px;
+}
+.main__body .page__content .services__team__members .mercury {
+  background-image: url(../image/mercury.jpeg);
+}
+.main__body .page__content .services__team__members .mars {
+  background-image: url(../image/mars.jpeg);
+}
+.main__body .page__content .services__team__members .jupiter {
+  background-image: url(../image/jupiter.jpeg);
 }
 .main__body .page .blog {
   flex-direction: row;
@@ -282,6 +298,9 @@ body {
   text-align: center;
   font-size: 1rem;
   margin: 0;
+}
+.main__body .page .blog__card__title a {
+  color: #595758;
 }
 .main__body .page .blog__card .card1 {
   background-image: url(../image/blogcard1.jpeg);

@@ -266,11 +266,27 @@ body {
                     &__members {
                         display: flex;
                         justify-content: space-around;
+                        margin-bottom: 40px;
                         &__member {
                             height: 200px;
                             width: 200px;
-                            overflow: hidden;
                             border-radius: 50%;
+                            position: relative;
+                            display: flex;
+                            justify-content: center;
+                            &__name {
+                                position: absolute;
+                                bottom: -60px;
+                            }
+                        }
+                        .mercury {
+                            background-image: url(../image/mercury.jpeg);
+                        }
+                        .mars {
+                            background-image: url(../image/mars.jpeg);
+                        }
+                        .jupiter {
+                            background-image: url(../image/jupiter.jpeg);
                         }
                     }
                 }
@@ -321,6 +337,9 @@ body {
                         text-align: center;
                         font-size: 1rem;
                         margin: 0;
+                        a {
+                            color: rgb(89, 87, 88);
+                        }
                     }
 
                     .card1 {
