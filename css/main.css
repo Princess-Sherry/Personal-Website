@@ -60,6 +60,7 @@ body {
   overflow: hidden;
   margin-top: 1rem;
   margin-bottom: 1rem;
+  box-shadow: 0px 15px 25px 0px rgba(0, 0, 0, 0.1);
 }
 .main__body .page__header {
   background-color: #fad9df;
@@ -67,13 +68,124 @@ body {
   font-size: 2rem;
   display: flex;
   justify-content: center;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
   margin-top: 0;
   margin-bottom: 0;
 }
 .main__body .page__content {
-  padding: 3rem;
+  padding: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+}
+.main__body .page__content .resume__experience {
+  display: flex;
+  justify-content: space-between;
+}
+.main__body .page__content .resume__experience__sub {
+  width: 45%;
+}
+.main__body .page__content .resume__experience__sub__title {
+  margin-top: 0;
+}
+.main__body .page__content .resume__experience__sub__timelines {
+  padding: 8px 0px 8px 50px;
+  border-left: 2px solid lightgrey;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item {
+  box-sizing: border-box;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  border-radius: 10px;
+  border-left: 2px solid #fad9df;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item__title {
+  font-size: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item__subtitle {
+  font-size: 0.8rem;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item__subtitle__year {
+  color: #f492ab;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item__subtitle__location {
+  color: gray;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item__detail {
+  line-height: 1.8rem;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item::before {
+  content: "";
+  width: 50px;
+  border-bottom: 2px solid #fad9df;
+  position: absolute;
+  left: -50px;
+  top: 35px;
+}
+.main__body .page__content .resume__experience__sub__timelines .resume__experience__item::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border: 2px solid #fad9df;
+  border-radius: 50%;
+  position: absolute;
+  left: -60px;
+  top: 29px;
+  background-color: white;
+}
+.main__body .page__content .resume__skill {
+  display: flex;
+  justify-content: space-between;
+}
+.main__body .page__content .resume__skill__sub {
+  margin: 2rem 0;
+  width: 45%;
+}
+.main__body .page__content .resume__skill__sub span {
+  color: #f492ab;
+}
+.main__body .page__content .resume__skill__sub .resume__skill__item__name {
+  font-size: 0.9rem;
+}
+.main__body .page__content .resume__skill__sub .resume__skill__item__score {
+  background-color: lightgray;
+  border-radius: 2px;
+  overflow: hidden;
+  content: "";
+  height: 1rem;
+  margin: 10px 0px;
+  position: relative;
+}
+.main__body .page__content .resume__skill__sub .resume__skill__item__score::after {
+  background-color: #fad9df;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  content: "";
+}
+.main__body .page__content .resume__skill__sub .waves-score::after {
+  width: 80%;
+}
+.main__body .page__content .resume__skill__sub .kick-score::after {
+  width: 70%;
+}
+.main__body .page__content .resume__skill__sub .flash-score::after {
+  width: 85%;
+}
+.main__body .page__content .resume__skill__sub .mask-score::after {
+  width: 65%;
+}
+.main__body .page__content .resume__skill__sub .stick-score::after {
+  width: 75%;
+}
+.main__body .page__content .resume__skill__sub .pen-score::after {
+  width: 68%;
 }
 .main__body .page .homepage__header {
   justify-content: space-around;
@@ -83,10 +195,17 @@ body {
   background-size: cover;
   width: 250px;
   height: 250px;
+  margin-top: 3rem;
+  margin-bottom: -3rem;
+  border: 3px solid #f492ab;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+.main__body .page .homepage__header__avatar:hover {
   margin-top: 2rem;
   margin-bottom: -2rem;
-  border: 3px solid #f492ab;
-  border-radius: 4px;
+  box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.1);
 }
 .main__body .page .homepage__header__info {
   display: flex;
@@ -99,9 +218,35 @@ body {
 }
 .main__body .page .homepage__header__info__occupation {
   font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+.main__body .page .homepage__header__info__links {
+  margin-top: 0.5rem;
+  display: flex;
+  z-index: 500;
+}
+.main__body .page .homepage__header__info__links__item {
+  background-color: whitesmoke;
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  margin: 5px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main__body .page .homepage__header__info__links .twitter {
+  background-image: url(../image/twitter.svg);
+}
+.main__body .page .homepage__header__info__links .facebook {
+  background-image: url(../image/facebook.svg);
+}
+.main__body .page .homepage__header__info__links .instagram {
+  background-image: url(../image/instagram.svg);
 }
 .main__body .page .homepage__content {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .main__body .page .homepage__content__aboutme {
@@ -119,6 +264,16 @@ body {
   padding-right: 2rem;
 }
 .main__body .page .homepage__content__detail__table td:last-of-type {
+  color: gray;
+}
+.main__body .page .homepage__content__detail__table a {
+  color: #f492ab;
+}
+.main__footer {
+  color: gray;
+}
+.main__footer a {
+  text-decoration: none;
   color: gray;
 }
 
