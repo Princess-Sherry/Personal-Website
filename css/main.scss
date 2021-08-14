@@ -211,6 +211,69 @@ body {
                         }
                     }
                 }
+
+                .services__myservices {
+                    &__title span {
+                        color:rgb(244, 146, 171)
+                    }
+
+                    &__items {
+                        display: flex;
+                        justify-content: space-around;
+
+                        &__item {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            box-sizing: border-box;
+                            padding: 10px 30px;
+                            width: 35%;
+
+                            &__logo {
+                               width: 200px;
+                               height: 200px;
+                               content: "";
+                               background-position: center;
+                               border-radius: 50%;
+                            }
+
+                            .logo-stick {
+                                background-image: url(../image/stick.jpeg);
+                                background-size: 120%;
+                            }
+
+                            .logo-flash {
+                                background-image: url(../image/flash.jpeg);
+                                background-size: cover;
+                            }
+
+                            .logo-pen {
+                                background-image: url(../image/disguise_pen.jpeg);
+                                background-size: 110%;
+                            }
+
+                            &__intro {
+                                line-height: 1.5rem;
+                                width: 100%;
+                                margin: 0px;
+                            }
+                        }
+                    }
+                }
+
+                .services__team {
+                    padding: 30px 0px;
+                    &__members {
+                        display: flex;
+                        justify-content: space-around;
+                        &__member {
+                            height: 200px;
+                            width: 200px;
+                            overflow: hidden;
+                            border-radius: 50%;
+                        }
+                    }
+                }
             }
 
             .homepage__header {
