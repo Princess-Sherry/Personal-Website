@@ -276,6 +276,79 @@ body {
                 }
             }
 
+            .blog {
+                flex-direction: row;
+                justify-content: space-around;
+                flex-wrap: wrap;
+
+                &__card {
+                    box-sizing: border-box;
+                    margin: 30px 10px;
+                    border-radius: 8px;
+                    overflow: hidden;
+                    box-shadow: 0px 5px 15px 0px rgb(0 0 0 / 10%);
+                    padding-bottom: 20px;
+                    
+                    &__image {
+                        content:"";
+                        width: 360px;
+                        height: 200px;
+                        overflow: hidden;
+                        background-size: cover;
+                        background-position: center;
+                        position: relative;
+                        &__date {
+                            color:gray;
+                            background-color: rgb(250, 217, 223);
+                            position: absolute;
+                            top:20px;
+                            right:20px;
+                            padding: 5px;
+                            border-radius: 5px;
+                        }
+                    }
+
+                    &__type {
+                        margin-top: 10px;
+                        line-height: 2rem;
+                        text-align: center;
+                        color: gray;
+                        font-size: 0.8rem;
+                    }
+
+                    &__title {
+                        line-height: 2rem;
+                        text-align: center;
+                        font-size: 1rem;
+                        margin: 0;
+                    }
+
+                    .card1 {
+                        background-image: url(../image/blogcard1.jpeg);
+                    }
+
+                    .card2 {
+                        background-image: url(../image/blogcard2.jpeg);
+                    }
+
+                    .card3 {
+                        background-image: url(../image/blogcard3.jpeg);
+                    }
+
+                    .card4 {
+                        background-image: url(../image/blogcard4.jpeg);
+                    }
+
+                    .card5 {
+                        background-image: url(../image/blogcard5.jpeg);
+                    }
+
+                    .card6 {
+                        background-image: url(../image/blogcard6.jpeg);
+                    }
+                }
+            }
+
             .homepage__header {
                 justify-content: space-around;
 
