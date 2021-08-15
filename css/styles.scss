@@ -22,7 +22,6 @@ body {
         padding-top: 1rem;
         padding-bottom: 1rem;
         width: 100%;
-        
 
         &__title {
             font-size: 1.5rem;
@@ -37,15 +36,30 @@ body {
         &__navbar {
             display: flex;
             &__item {
-                padding-left: 1rem;
-                padding-right: 1rem;
+                margin-left: 1rem;
+                margin-right: 1rem;
                 font-size: 1rem;
                 text-decoration: none;
                 color: gray;
                 display: block;
                 &:last-of-type {
-                    padding-right: 0;
+                    margin-right: 0;
                 }
+            }
+            &__item:hover {
+                color:rgb(250, 217, 223);
+            }
+            .navItem--active {
+                color:rgb(244, 146, 171);
+                position: relative;
+            }
+            .navItem--active::after {
+                content:"";
+                width: 100%;
+                border-bottom:2px solid rgb(250, 217, 223);
+                position: absolute;
+                bottom: -5px;
+                left:0;
             }
         }
     }

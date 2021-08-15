@@ -36,15 +36,30 @@ body {
   display: flex;
 }
 .main__header__navbar__item {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 1rem;
   text-decoration: none;
   color: gray;
   display: block;
 }
 .main__header__navbar__item:last-of-type {
-  padding-right: 0;
+  margin-right: 0;
+}
+.main__header__navbar__item:hover {
+  color: #fad9df;
+}
+.main__header__navbar .navItem--active {
+  color: #f492ab;
+  position: relative;
+}
+.main__header__navbar .navItem--active::after {
+  content: "";
+  width: 100%;
+  border-bottom: 2px solid #fad9df;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
 }
 .main__body {
   display: flex;
