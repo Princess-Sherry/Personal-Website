@@ -3,8 +3,6 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #f5f5f5;
-  display: flex;
-  justify-content: center;
 }
 
 .main {
@@ -15,6 +13,7 @@ body {
   font-family: sans-serif;
   max-width: 1000px;
   min-height: 100vh;
+  margin: auto;
 }
 .main__header {
   display: flex;
@@ -53,9 +52,8 @@ body {
   width: 100%;
 }
 .main__body .page {
+  display: none;
   background-color: white;
-  display: flex;
-  flex-direction: column;
   border-radius: 16px;
   overflow: hidden;
   margin-top: 1rem;
@@ -479,7 +477,12 @@ body {
 .main__body .page .homepage__content__detail__table a {
   color: #f492ab;
 }
+.main__body .page--active {
+  display: flex;
+  flex-direction: column;
+}
 .main__footer {
+  margin: 10px auto;
   color: gray;
 }
 .main__footer a {
