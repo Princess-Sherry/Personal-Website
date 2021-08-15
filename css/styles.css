@@ -341,19 +341,28 @@ body {
 .main__body .page .contact__subtitle {
   line-height: 2rem;
 }
+.main__body .page .contact .mapouter {
+  position: relative;
+  text-align: right;
+  height: 200px;
+  width: 350px;
+}
+.main__body .page .contact .gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 350px;
+  border-radius: 5px;
+  border: 1px solid #fad9df;
+}
 .main__body .page .contact__subtitle span {
   color: #f492ab;
 }
 .main__body .page .contact__touch {
   width: 45%;
 }
-.main__body .page .contact__touch__map {
-  width: 100%;
-  height: 200px;
-  border: 1px solid #fad9df;
-  margin-bottom: 20px;
-}
 .main__body .page .contact__touch__detail {
+  margin-top: 20px;
   color: #595758;
   font-size: 1rem;
 }

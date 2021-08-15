@@ -35,3 +35,4 @@ function changeNavItem() {
     document.querySelector(currentNav).classList.add(activeNavItem);
 }
 
+
