@@ -1,13 +1,8 @@
 var previous = '';
 var current = 'HOME';
-var previousNav = '';
-var currentNav = '[href="' + current + '"]';
-var activePage = 'page--active';
-var activeNavItem = 'navItem--active';
+var active = 'page--active';
 
-document.querySelector(currentNav).classList.add(activeNavItem);
-document.querySelector('#' + current).classList.add(activePage);
-
+document.querySelector('#' + current).classList.add(active);
 
 var navItems = document.querySelectorAll('.main__header__navbar__item');
 
@@ -16,23 +11,14 @@ navItems.forEach(element => {
         event.preventDefault();
         previous = current;
         current = event.target.getAttribute('href');
-        previousNav = currentNav;
-        currentNav = '[href="' + current + '"]';
         changePage();
-        changeNavItem();
     }
 });
 
 function changePage() {
     var previousPage = document.querySelector('#' + previous);
-    previousPage.classList.remove(activePage);
+    previousPage.classList.remove(active);
     var currentPage = document.querySelector('#' + current);
-    currentPage.classList.add(activePage);
+    currentPage.classList.add(active);
 }
-
-function changeNavItem() {
-    document.querySelector(previousNav).classList.remove(activeNavItem);
-    document.querySelector(currentNav).classList.add(activeNavItem);
-}
-
 
